@@ -1,0 +1,139 @@
+:root {
+  --primary:hsl(25, 97%, 53%);
+  --bg-color:hsl(216, 12%, 8%);
+  --white:hsl(0, 0%, 100%);
+  --light-gray:hsl(217, 12%, 63%);
+  --medium-gray:hsl(216, 12%, 54%);
+  --dark-blue:hsl(213, 19%, 18%);
+  --fw-regular: 400;
+  --fw-bold:700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: var(--fw-regular);
+  color: var(--light-gray);
+  background-color: var(--bg-color);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.card {
+  display: grid;
+  background-color: var(--dark-blue);
+  border-radius: 2rem;
+  max-width: 415px;
+  padding: 2.0625rem;
+}
+.card__icon {
+  box-sizing: content-box;
+  background-color: var(--medium-gray);
+  border-radius: 50%;
+  padding: 17px;
+  width: 17px;
+  height: 16px;
+  margin-bottom: 30px;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  margin-bottom: 22px;
+}
+.card__text {
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.buttonR {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 17px;
+  border-radius: 100%;
+  padding: 17px;
+  background-color: var(--medium-gray);
+  color: var(--light-gray);
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1em;
+  background-color: var(--white);
+  color: var(--primary);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}/*# sourceMappingURL=styles.css.map */
